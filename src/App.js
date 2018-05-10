@@ -67,8 +67,8 @@ class App extends Component {
         // simpleStorageInstance.deposit({from:accounts[0], value: 1})
         var testVal = this.state.web3.toWei('1', "ether")
         var fguessVal
-        // var matchME = Math.floor(Math.random() * 10);
-        var matchME = 5
+        var matchME = Math.floor(Math.random() * 100);
+        // var matchME = 5
         simpleStorageInstance.set(matchME, {from: accounts[0]}).then((result) => {
         	return simpleStorageInstance.get.call(accounts[0])
         }).then((result) => {
